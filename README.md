@@ -28,7 +28,7 @@ or
 
   <i>No pattern detected</i>
   
-The third line tries to UTF8 endcode the pattern and display pattern as text. (using python repr()):
+The third line tries to UTF8 encode the pattern and display pattern as text. (using python `repr()`):
 N.B the wildcard "*" is replaced with a "space" character for legibility. 
 
   <i>'{\\rtf1\\   '</i>
