@@ -23,10 +23,13 @@ The second line either shows you the raw hex pattern, or tells you if didn't fin
 (e.g. at least one byte that is commonly found in the same sequence location in all given files):
 
   <i>7b5c727466315c***</i>
+  
 or 
+
   <i>No pattern detected</i>
   
 The third line tries to UTF8 endcode the pattern and display pattern as text. (using python repr()):
 N.B the wildcard "*" is replaced with a "space" character for legibility. 
+
   <i>'{\\rtf1\\   '</i>
 
