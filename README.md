@@ -17,19 +17,19 @@ If they don't match - the byte at the nonmatching sequence location is removed.
 Once all the files have been iterated over, the script prints what it knows. 
 The first line tells you the parameters:
 
-  <i>Files used to make pattern: 3192, Start offset: 0, End offset: 10</i>
+  <i>`Files used to make pattern: 3192, Start offset: 0, End offset: 10`</i>
   
 The second line either shows you the raw hex pattern, or tells you if didn't find a common pattern
 (e.g. at least one byte that is commonly found in the same sequence location in all given files):
 
-  <i>7b5c727466315c***</i>
+  <i>`7b5c727466315c***`</i>
   
 or 
 
-  <i>No pattern detected</i>
+  <i>`No pattern detected`</i>
   
 The third line tries to UTF8 encode the pattern and display pattern as text. (using python `repr()`):
 N.B the wildcard "*" is replaced with a "space" character for legibility. 
 
-  <i>'{\\rtf1\\   '</i>
+  <i>`{\\rtf1\\   `</i>
 
