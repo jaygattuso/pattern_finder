@@ -32,4 +32,32 @@ The third line tries to UTF8 encode the pattern and display pattern as text. (us
 N.B the wildcard "*" is replaced with a "space" character for legibility. 
 
   <i>`{\\rtf1\\   `</i>
-
+  
+# how to use
+ 
+Using what ever method makes sense, put together a list of valid filepaths. 
+  
+Instantiate the Pattern_Detector() class, giving the list and start and end byte offsets
+  
+These default as follows if not given:
+start offset: `start = 0`
+end offset: `end = 50`
+files: `files_list = []` 
+  
+or 
+  
+  `patterns = Pattern_Detector(files_list = my_list)`
+  
+  `patterns = Pattern_Detector(start = 10, files_list = my_list)`
+  
+  `patterns = Pattern_Detector(start = 10, end = 1000, files_list = my_list)`
+  
+These can addressed in code as a class object
+  
+  `patterns.start = 0`
+  
+  `patterns.end = 0`
+  
+  `patterns.files_list = ["my_file_1.ext","my_file_2.ext","my_file_3.ext"]`
+  
+THe script is currently configured to just run when given a list. 
