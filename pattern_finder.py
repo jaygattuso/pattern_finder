@@ -73,6 +73,9 @@ class Pattern_Detector(object):
 			print "No pattern detected"
 		else:
 			print "".join(parts)
+			byte_string = byte_string.replace("*", "20")
+			print repr(''.join(chr(int(byte_string[i:i+2], 16)) for i in range(0, len(byte_string), 2)))
+
 
 
 ### make a list of files for pattern detection.
